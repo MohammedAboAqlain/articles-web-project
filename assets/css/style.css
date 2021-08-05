@@ -1,0 +1,121 @@
+:root {
+    --color-navy: #2500F9;
+    --color-blue: #2563FF;
+    --color-light-blue: #F4F4FF;
+    --color-dark-blue: #2f3e6b;
+    --color-pink: #F55767;
+    --color-light-pink: #FFECEF;
+    --color-green: #40975F;
+    --color-light-green: #E4FFEE;
+    --color-grey: #616368;
+    --color-light-grey: #F4F4FF;
+    --color-light-yellow: #FFF6D3;
+    --color-light-orange: #FDEEE4;
+    --color-light-teal: #EAF9FF;
+    --font-poppins-semiBold: Poppins-SemiBold, AdobeInvisFont, MyriadPro-Regular;
+    --font-poppins-regular: Poppins-Regular, AdobeInvisFont, MyriadPro-Regular;
+}
+
+header nav {
+    background-color: var(--color-dark-blue);
+}
+
+div.navbar-brand {
+    align-self: flex-end;
+}
+
+nav .active {
+    background-color: #bdbfc559;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #bdbfc559;
+    border-radius: 5px;
+}
+
+
+/* .card div:hover {
+    border: 2px solid rgb(184, 183, 183);
+    border-radius: 5px;
+} */
+
+a:hover {
+    text-decoration: none;
+}
+
+.card-title {
+    color: var(--color-dark-blue);
+    font-size: 19px;
+}
+
+.card-header-cat {
+    border-bottom: 2px solid var(--color-dark-blue);
+}
+
+.card-img-top {
+    filter: brightness(0.8);
+    object-fit: cover;
+}
+
+.topleft {
+    top: 3px;
+    left: 8px;
+}
+
+.topright {
+    top: 3px;
+    right: 8px;
+    font-size: 12px;
+    background-color: rgb(248, 82, 82);
+}
+
+.bottomleft {
+    bottom: 8px;
+    left: 8px;
+    background-color: rgba(75, 164, 236, 0.356);
+}
+
+.bottomright {
+    bottom: 8px;
+    right: 8px;
+}
+
+.card-text {
+    color: rgb(184, 183, 183);
+}
+
+.centered {
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.carousel-img {
+    filter: brightness(0.5);
+}
+
+.bottomleft-categories {
+    bottom: 8px;
+    left: 8px;
+    background-color: rgb(36, 164, 187);
+}
+
+footer a {
+    font-size: 16px;
+}
+
+.social-icon {
+    color: transparent;
+}
+
+@media screen and (max-width: 540px) {
+    .carousel-caption h4 {
+        font-size: 14px;
+    }
+    .centered {
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
