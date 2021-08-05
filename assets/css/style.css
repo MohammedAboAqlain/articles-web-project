@@ -35,9 +35,11 @@ a:hover {
 }
 
 
-/* .card div:hover {
-    border: 2px solid rgb(184, 183, 183);
+/* #articles div div:hover,
+#categories div:hover {
+    cursor: pointer;
     border-radius: 5px;
+    background-color: rgba(194, 194, 194, 0.5);
 } */
 
 a:hover {
@@ -51,6 +53,10 @@ a:hover {
 
 .card-header-cat {
     border-bottom: 2px solid var(--color-dark-blue);
+}
+
+.card-header-topics {
+    border-bottom: 2px solid;
 }
 
 .card-img-top {
@@ -81,6 +87,11 @@ a:hover {
     right: 8px;
 }
 
+.img-badge {
+    bottom: 40%;
+    right: 0%;
+}
+
 .card-text {
     color: rgb(184, 183, 183);
 }
@@ -109,12 +120,56 @@ footer a {
     color: transparent;
 }
 
+.center-right {
+    top: 30%;
+    right: 16px;
+    font-size: 18px;
+}
+
+.center-left {
+    top: 20%;
+    left: 16px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 650px) {
+    .carousel-caption h4 {
+        font-size: 18px;
+    }
+    .centered {
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .img-badge {
+        bottom: 40%;
+        right: 30%;
+    }
+}
+
 @media screen and (max-width: 540px) {
+    .carousel-caption h4 {
+        font-size: 16px;
+    }
+    .centered {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .center-right h5 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 420px) {
     .carousel-caption h4 {
         font-size: 14px;
     }
     .centered {
-        top: 40%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
