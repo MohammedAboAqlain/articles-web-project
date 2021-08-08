@@ -132,6 +132,49 @@ footer a {
     font-size: 18px;
 }
 
+#editorial-team a:hover {
+    background-color: transparent;
+}
+
+#editorial-team div .row {
+    border-color: rgb(167, 166, 166);
+}
+
+#editorial-team p {
+    color: rgb(179, 179, 179);
+    font-size: 13px;
+}
+
+.page-item a {
+    color: black;
+}
+
+.has-search .form-control {
+    padding-right: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #ccc;
+}
+
+.ordered-list ol {
+    counter-reset: item;
+    padding-left: 10px;
+}
+
+.ordered-list li:before {
+    content: counters(".") " ";
+    counter-increment: item
+}
+
 @media screen and (max-width: 650px) {
     .carousel-caption h4 {
         font-size: 18px;
