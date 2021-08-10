@@ -2,8 +2,22 @@
     --color-dark-blue: #2f3e6b;
 }
 
+html {
+    direction: ltr;
+}
+
 header nav {
     background-color: var(--color-dark-blue);
+}
+
+*.text-right,
+*.text-md-right {
+    align-items: flex-start !important;
+    text-align: left !important;
+}
+
+div.position-relative.text-white {
+    width: 100%;
 }
 
 div.navbar-brand {
@@ -21,7 +35,7 @@ a:hover {
 }
 
 a.nav-link.text-white {
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
@@ -56,30 +70,30 @@ a:hover {
 
 .topleft {
     top: 3px;
-    left: 8px;
+    right: 8px;
 }
 
 .topright {
     top: 3px;
-    right: 8px;
+    left: 8px;
     font-size: 12px;
     background-color: rgb(248, 82, 82);
 }
 
 .bottomleft {
     bottom: 8px;
-    left: 8px;
+    right: 8px;
     background-color: rgba(75, 164, 236, 0.356);
 }
 
 .bottomright {
     bottom: 8px;
-    right: 8px;
+    left: 8px;
 }
 
 .img-badge {
     bottom: 40%;
-    right: 0%;
+    left: 0%;
 }
 
 .card-text {
@@ -98,7 +112,7 @@ a:hover {
 
 .bottomleft-categories {
     bottom: 8px;
-    left: 8px;
+    right: 8px;
     background-color: rgb(36, 164, 187);
 }
 
@@ -112,13 +126,13 @@ footer a {
 
 .center-right {
     top: 30%;
-    right: 16px;
+    left: 16px;
     font-size: 18px;
 }
 
 .center-left {
     top: 20%;
-    left: 16px;
+    right: 16px;
     font-size: 18px;
 }
 
@@ -132,7 +146,15 @@ footer a {
 
 #editorial-team p {
     color: rgb(179, 179, 179);
+    font-size: 11px;
+}
+
+#editorial-team p.mb-1 {
     font-size: 13px;
+}
+
+h4.card-title {
+    min-height: 2.5em;
 }
 
 .page-item a {
@@ -140,7 +162,7 @@ footer a {
 }
 
 .has-search .form-control {
-    padding-right: 2.375rem;
+    padding-left: 2.375rem;
 }
 
 .has-search .form-control-feedback {
@@ -165,6 +187,14 @@ footer a {
     counter-increment: item
 }
 
+div.col-12.col-md-4.mb-3.mb-md-0 {
+    padding-left: 0px;
+}
+
+.header img.w-75 {
+    float: right;
+}
+
 @media screen and (max-width: 650px) {
     .carousel-caption h4 {
         font-size: 18px;
@@ -179,7 +209,15 @@ footer a {
 @media screen and (max-width: 760px) {
     .img-badge {
         bottom: 40%;
-        right: 30%;
+        left: 30%;
+    }
+    .header img.w-75 {
+        float: left;
+    }
+    *.text-right,
+    *.text-md-right {
+        align-items: flex-start !important;
+        text-align: center !important;
     }
 }
 
